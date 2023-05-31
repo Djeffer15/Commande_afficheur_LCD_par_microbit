@@ -87,7 +87,7 @@ Traduire le pseudo-code suivant en python pour **micro:bit**.
 
 **L’afficheur LCD - Liaisons**
 
-**Bus de données ![](Capture d'écran 2023-05-31 020527.png)
+![](Capture d'écran 2023-05-31 020527.png)
 **(8 bits) Entrée  Transmission Sélection** 1 : caractère
 
 0 : instruction
