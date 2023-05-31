@@ -1,9 +1,6 @@
 # Commande_afficheur_LCD_par_microbit
 Tâches principales la mesure puis l’affichage des variations d’inclinaison de la carte microcontrôleur sur l’écran LCD.
 
-
-
-
 ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.004.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.005.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.006.png)  
 
 
@@ -12,7 +9,7 @@ L’afficheur LCD en mode 8 bits
 
 
 
-**communication micro:bit – afficheur LCD ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)Objectif du TP**
+**communication micro:bit – afficheur LCD**
 
 Pour établir la communication entre la carte BBC **micro:bit** et un afficheur LCD, nous devons créer une bibliothèque des fonctions de gestion de ce composant.
 
@@ -22,7 +19,7 @@ Le code résultant aura pour tâches principales la mesure puis l’affichage de
 
 Ce code source sera téléchargé sur la carte **micro:bit**, puis exécuté.
 
-Rappels: Connexions afficheur LCD – carte BBC micro:bit![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+Rappels: Connexions afficheur LCD – carte BBC micro:bit
 
 - Cmmande en écriture de l’écran LCD
 - - écran 2x16 caractères
@@ -48,7 +45,7 @@ Rappels: Connexions afficheur LCD – carte BBC micro:bit![](Aspose.Words.6e5b45
 
 Commande de l’afficheur LCD par micro:bit
 
-Programme sur la carte micro:bit.![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+Programme sur la carte micro:bit.
 
 Ce programme mesure les variations d’inclinaison (par le module accelerometer) de la carte **micro:bit**. Les valeurs
 
@@ -61,9 +58,9 @@ d’acquisition sont affichées en temps réel sur l’écran LCD :
 
 Le programme s’arrête lorsque l’utilisateur appuie sur le bouton-poussoir***button\_b***.
 
-L’accéléromètre fait partie des composants de la carte **micro:bit**. Il ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)permet de mesurer l’inclinaison de la carte microcontrôleur suivant les trois directions (x,y,z). La présentation de la bibliothèque associée à ce capteur est accessible à l’adresse :
+L’accéléromètre fait partie des composants de la carte **micro:bit**. Il permet de mesurer l’inclinaison de la carte microcontrôleur suivant les trois directions (x,y,z). La présentation de la bibliothèque associée à ce capteur est accessible à l’adresse :
 
-[https://microbit- micropython.readthedocs.io/fr/latest/accelerometer.html?highlight=get_x](https://microbit-micropython.readthedocs.io/fr/latest/accelerometer.html)
+
 
 Les fonctions à utiliser dans le programme font partie de la liste :
 
@@ -75,7 +72,7 @@ Les fonctions à utiliser dans le programme font partie de la liste :
 
  
 
-**Le module accelerometer de la carte micro:bit![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+**Le module accelerometer de la carte micro:bit **
 
 ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.009.jpeg)
 
@@ -84,14 +81,13 @@ Les fonctions à utiliser dans le programme font partie de la liste :
 Traduire le pseudo-code suivant en python pour **micro:bit**.
 
 
-**Programme à implémenter sur la carte micro:bit![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+**Programme à implémenter sur la carte micro:bit!**
 
 ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.010.jpeg)
 
 **L’afficheur LCD - Liaisons**
 
-**Bus de données ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.011.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.012.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.013.jpeg)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.014.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.015.png)**
-
+**Bus de données ![](Capture d'écran 2023-05-31 020527.png)
 **(8 bits) Entrée  Transmission Sélection** 1 : caractère
 
 0 : instruction
