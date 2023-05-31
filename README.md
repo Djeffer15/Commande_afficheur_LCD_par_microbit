@@ -1,7 +1,7 @@
 # Commande_afficheur_LCD_par_microbit
 Tâches principales la mesure puis l’affichage des variations d’inclinaison de la carte microcontrôleur sur l’écran LCD.
 
-![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.004.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.005.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.006.png)  
+![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.004.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.006.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.005.png)
 
 
 
@@ -31,7 +31,7 @@ Rappels: Connexions afficheur LCD – carte BBC micro:bit
 - - entrée de sélection de registre RS -> pin6
 - - entrée de validation E  -> pin7
 - - entrée de lecture/écriture (R/W) reliée au GND
-- - Bus de données (8 lignes) :
+- - bus de données (8 lignes) :
 - DB0   DB1   DB2   DB3    DB4    DB5    DB6    DB7
 - [pin4, pin3, pin8, pin16, pin15, pin14, pin13, pin12] 
 - Fonctions de bibliothèque LCD :
@@ -87,7 +87,8 @@ Traduire le pseudo-code suivant en python pour **micro:bit**.
 
 **L’afficheur LCD - Liaisons**
 
-![](Capture d'écran 2023-05-31 020527.png)
+**Bus données**
+![](plan.png)
 **(8 bits) Entrée  Transmission Sélection** 1 : caractère
 
 0 : instruction
@@ -98,29 +99,28 @@ qui valide **Validation Opération** l’opération **Entrée**  0 : écriture
 
 effectuée **Lecture/Écriture** 1 : lecture
 
-**Chronogramme : opérations d’écriture![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+**Chronogramme : opérations d’écriture**
 
-![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.016.jpeg)
 
-<a name="_page9_x0.00_y0.00"></a>**Opérations d’écriture : Cycles, durées![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+**Opérations d’écriture : Cycles, durées**
 
 ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.017.jpeg)
 
-<a name="_page10_x0.00_y0.00"></a>**L’écran LCD – Jeu d’instructions![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.018.png)**
+**L’écran LCD – Jeu d’instructions**
 
 ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.019.jpeg)
 
-**Clear Display![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+**Clear Display**
 
 Clear  ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.020.jpeg)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.021.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.022.png)Display 
 
-**Display ON/OFF![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+**Display ON/OFF**
 
 ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.023.png)
 
-**Function Set![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.024.jpeg)**
+**Function Set![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.024.jpeg)**
 
-**Positionner le curseur (ligne, colonne)![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+**Positionner le curseur (ligne, colonne)**
 
 ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.025.jpeg)
 
@@ -136,7 +136,7 @@ Clear  ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.020.jpeg)![](Aspose
 
  
 
-**Jeu de caractères de l’afficheur LCD![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.007.png)**
+**Jeu de caractères de l’afficheur LCD**
 
 ![](Aspose.Words.6e5b452a-d00f-4a2a-807c-32b401569657.026.jpeg)
 
